@@ -1,14 +1,15 @@
 #!/bin/bash
-# setup.sh — 从 .template/ 创建模板文件软链接
+# setup.sh — 从 .template/ 创建模板文件
+# 直接执行：.template/setup.sh
 # macOS / Linux 使用；Windows 版本稍后补充
 
 set -e
-cd "$(dirname "$0")"
+cd "$(git rev-parse --show-toplevel)"
 
-echo "Setup ABC workspace..."
+echo "Setup workspace..."
 
 ln -sf .template/CLAUDE.md CLAUDE.md
 ln -sf .template/AGENTS.md AGENTS.md
 cp -n .template/.gitignore .gitignore
 
-echo "Done. Template files linked from .template/"
+echo "Done."

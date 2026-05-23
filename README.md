@@ -17,13 +17,12 @@
 
 ```
 git submodule update --remote
-./setup.sh    # 重新创建软链接，.gitignore 如已存在则跳过
+.template/setup.sh
 ```
 
 ## 新建派生项目
 
 ```
 git submodule add https://github.com/overwatchd/TemplateABC.git .template
-cp .template/setup.sh .
-./setup.sh
+.template/setup.sh
 ```
