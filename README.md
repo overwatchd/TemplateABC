@@ -8,6 +8,7 @@
 |------|------|----------|
 | `CLAUDE.md` | Agent 入口，强制指向 AGENTS.md | 软链接 |
 | `AGENTS.md` | 跨项目通用规则与机制 | 软链接 |
+| `setup.sh` | 初始化脚本，创建软链接/复制文件至根目录 | 复制后执行 |
 | `.gitignore` | 通用忽略策略 | 复制（首次） |
 
 ## 更新同步
@@ -23,7 +24,6 @@ git submodule update --remote
 
 ```
 git submodule add https://github.com/overwatchd/TemplateABC.git .template
+cp .template/setup.sh .
 ./setup.sh
 ```
-
-`setup.sh` 内容参考已有派生项目（如 ABC）中的最新版本。
