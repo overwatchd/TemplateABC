@@ -1,0 +1,53 @@
+# 依赖
+node_modules/
+__pycache__/
+*.pyc
+*.pyo
+.pip-cache/
+vendor/
+
+# 构建输出
+dist/
+build/
+out/
+target/
+*.o
+*.class
+
+# 环境与密钥
+.env
+.env.*
+*.local
+*.secret
+credentials.*
+*.pem
+*.key
+
+# IDE 与编辑器
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 系统垃圾
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 日志与临时文件
+*.log
+logs/
+tmp/
+temp/
+*.tmp
+.cache/
+
+# Agent 本地状态
+.claude/memory/
+
+# 虚拟环境
+venv/
+.venv/
+env/
+.conda/
