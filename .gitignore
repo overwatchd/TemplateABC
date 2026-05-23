@@ -1,7 +1,6 @@
 # 模板文件（由 setup.sh 从 .template/ 创建，不入库）
 /CLAUDE.md
 /AGENTS.md
-/.gitignore
 
 # 依赖
 node_modules/
