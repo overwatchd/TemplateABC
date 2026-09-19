@@ -9,8 +9,6 @@ cd "$(git rev-parse --show-toplevel)"
 echo "Setup workspace..."
 
 ln -sf .template/AGENTS.md AGENTS.md
-if [ ! -e .gitignore ]; then
-  cp .template/.gitignore .gitignore
-fi
+ln -sf .template/.gitignore .gitignore
 
 echo "Done."

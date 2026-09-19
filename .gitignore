@@ -1,26 +1,30 @@
-# 模板文件（由 setup.sh 从 .template/ 创建，不入库）
+# 模板入口
 /AGENTS.md
 
-# 依赖
+# 依赖与构建输出
 node_modules/
 __pycache__/
-*.pyc
-*.pyo
+*.py[cod]
 .pip-cache/
 vendor/
-
-# 构建输出
 dist/
 build/
 out/
 target/
 *.o
 *.class
+venv/
+.venv/
+env/
+.conda/
 
-# 环境与密钥
+# 本机配置、凭据与运行状态
+local/
 .env
 .env.*
+!.env.example
 *.local
+*.local.*
 *.secret
 credentials.*
 *.pem
@@ -33,21 +37,19 @@ credentials.*
 *.swo
 *~
 
-# 系统垃圾
 .DS_Store
 Thumbs.db
 desktop.ini
 
-# 日志与临时文件
-*.log
-logs/
+# 临时文件、日志与下载产物
 tmp/
 temp/
-*.tmp
+downloads/
 .cache/
-
-# 虚拟环境
-venv/
-.venv/
-env/
-.conda/
+logs/
+*.log
+*.tmp
+*.msix
+*.msi
+*.exe
+*.cab
