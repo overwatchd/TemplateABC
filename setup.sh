@@ -9,6 +9,6 @@ cd "$(git rev-parse --show-toplevel)"
 echo "Setup workspace..."
 
 ln -sf .template/AGENTS.md AGENTS.md
-ln -sf .template/.gitignore .gitignore
+cp .template/.gitignore .gitignore
 
 echo "Done."
